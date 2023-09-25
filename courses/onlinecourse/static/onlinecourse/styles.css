@@ -1,0 +1,14 @@
+/* Cambiar el fondo de la página */
+body {
+    background-color: #f5bcf5; 
+}
+
+/* Cambiar el color de texto de los títulos h1 */
+h1 {
+    color: #14049ea9; 
+}
+
+/* Cambiar el color de texto de los párrafos */
+p {
+    color: #474746; 
+}

@@ -1,0 +1,50 @@
+{% extends "onlinecourse/base.html" %}
+{% load static %}
+{% block content %}
+<main role="main">
+
+    <div class="jumbotron">
+        <div class="container">
+            <h1 class="display-3">Descubre Nuestros Cursos en Línea</h1>
+            <p>Bienvenido a nuestra plataforma de educación en línea. Aquí puedes encontrar una amplia selección de cursos
+                en línea para impulsar tu carrera y aprender nuevas habilidades.</p>
+            <p><a class="btn btn-primary btn-lg" href="#" role="button">Explora nuestros cursos »</a></p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <h2>Desarrollo Web</h2>
+                <p>Aprende a crear sitios web increíbles. Desde HTML y CSS hasta programación avanzada, tenemos cursos para
+                    todos los niveles.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Ciencia de Datos</h2>
+                <p>Sumérgete en el mundo de la ciencia de datos y el análisis de datos. Domina herramientas y técnicas
+                    avanzadas.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+            </div>
+            <div class="col-md-4">
+                <h2>Diseño Gráfico</h2>
+                <p>Crea diseños impresionantes y domina las herramientas de diseño gráfico. Desde principiantes hasta
+                    profesionales.</p>
+                <p><a class="btn btn-secondary" href="#" role="button">Ver detalles »</a></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="{% static 'onlinecourse/images/imagen1.jpg' %}" alt="Curso de Desarrollo Web" class="img-fluid d-block" style="width: 300px; height: 200px;">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'onlinecourse/images/imagen2.jpg' %}"alt="Curso de Ciencia de Datos" class="img-fluid d-block" style="width: 300px; height: 200px;">
+            </div>
+            <div class="col-md-4">
+                <img src="{% static 'onlinecourse/images/imagen3.jpg' %}"alt="Curso de Diseño Gráfico" class="img-fluid d-block" style="width: 300px; height: 200px;">
+            </div>
+        </div>
+        <hr>
+    </div>
+</main>
+{% endblock %}
