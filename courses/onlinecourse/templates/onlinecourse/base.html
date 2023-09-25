@@ -26,6 +26,12 @@
                 <li class="nav-item {% if request.path == '/register/' %}active{% endif %}">
                     <a class="nav-link" href="/register">Registrarse</a>
                 </li>
+                <li class="nav-item {% if request.path == '/login/' %}active{% endif %}">
+                    <a class="nav-link" href="/login">Iniciar Sesión</a>
+                </li>
+                <li class="nav-item {% if request.path == '/logout/' %}active{% endif %}">
+                    <a class="nav-link" href="/logout">Salir Sesión</a>
+                </li>
             </ul>
         </div>
     </nav>
