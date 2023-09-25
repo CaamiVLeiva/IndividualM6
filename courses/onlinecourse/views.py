@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from .forms import RegistrationForm
 from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User, Group
 from django.contrib.auth import login, logout
 from django.contrib.auth.decorators import login_required
 
@@ -18,6 +18,8 @@ def register(request):
         form = RegistrationForm(request.POST)
         if form.is_valid():
             user = form.save()
+            group = form.cleaned_data['group']  # Obtiene el grupo seleccionado
+            user.groups.add(group) 
             login(request, user)
             return redirect('login')
     else:
